@@ -20,6 +20,7 @@ export const portfolioData = {
     {
       role: "Software Engineering Manager",
       company: "YouTube",
+      logo: "https://www.vectorlogo.zone/logos/youtube/youtube-icon.svg",
       period: "August 2022 - Present",
       location: "San Francisco Bay Area",
       description: "Leading engineering teams at YouTube focused on large-scale infrastructure and developer experience (DevEx) for the world's largest video platform.",
@@ -31,6 +32,7 @@ export const portfolioData = {
     {
       role: "Senior Engineering Manager, Developer Platform",
       company: "Databricks",
+      logo: "https://www.vectorlogo.zone/logos/databricks/databricks-icon.svg",
       period: "January 2020 - April 2022",
       location: "San Francisco, CA",
       description: "Built up the Developer Platform org during the pandemic. Started with 5 engineers in SF, grew it to ~30 engineers distributed across both the US and Europe.",
@@ -44,6 +46,7 @@ export const portfolioData = {
     {
       role: "Head of Developer Infrastructure",
       company: "Argo AI",
+      logo: "https://www.vectorlogo.zone/logos/argoai/argoai-icon.svg",
       period: "2018 - 2020",
       location: "Palo Alto, CA",
       description: "Grew Argo AI's DevInfra org from 4 to 10+ engineers in 3 US locations, scaling the org into two teams: Vehicle Deployment and Build.",
@@ -57,6 +60,7 @@ export const portfolioData = {
     {
       role: "Director of Engineering",
       company: "Didi",
+      logo: "https://www.vectorlogo.zone/logos/didiglobal/didiglobal-icon.svg",
       period: "2016 - 2018",
       location: "Mountain View, CA",
       description: "Dual leadership roles: Director of Engineering, International Business Technology and Head of Tools and Infrastructure (Effectiveness Platform).",
@@ -69,6 +73,7 @@ export const portfolioData = {
     {
       role: "Staff Software Engineer",
       company: "LinkedIn",
+      logo: "https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg",
       period: "2013 - 2016",
       location: "Mountain View, CA",
       description: "TL of the Developer Tools team, focusing on build and inner dev-loop; member of the Horizontal Initiative Committee.",
@@ -80,7 +85,8 @@ export const portfolioData = {
     },
     {
       role: "Lead Software Engineer",
-      company: "SuccessFactors, An SAP Company",
+      company: "SuccessFactors (SAP)",
+      logo: "https://www.vectorlogo.zone/logos/sap/sap-logo.svg",
       period: "2007 - 2013",
       location: "Reston, VA",
       description: "Grew into the TL of the Platform Foundation team and a core member of the Architecture Design Review Committee.",
