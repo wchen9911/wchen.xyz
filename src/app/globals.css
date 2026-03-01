@@ -15,7 +15,8 @@
   --color-foreground: var(--foreground);
   --color-youtube-red: var(--youtube-red);
   --color-soft-cream: var(--soft-cream);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: var(--font-lora), Charter, Georgia, serif;
   --font-mono: var(--font-geist-mono);
 }
 
@@ -30,8 +31,21 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   letter-spacing: -0.01em;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4 {
+  color: #fdfdfc;
 }
 
 @keyframes fade-in {

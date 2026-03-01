@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Lora } from "next/font/google";
 import "./globals.css";
 import { AlertTriangle } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
 });
 
@@ -26,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-[#bc1a22] selection:text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} ${lora.variable} antialiased selection:bg-[#bc1a22] selection:text-white`}
       >
         <div className="relative">
           {/* AI Experiment Banner */}
