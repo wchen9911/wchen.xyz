@@ -46,7 +46,7 @@ export const portfolioData = {
     {
       role: "Head of Developer Infrastructure",
       company: "Argo AI",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Argo_AI_logo.svg",
+      logo: "/logos/argoai.png",
       period: "2018 - 2020",
       location: "Palo Alto, CA",
       description: "Grew Argo AI's DevInfra org from 4 to 10+ engineers in 3 US locations, scaling the org into two teams: Vehicle Deployment and Build.",
