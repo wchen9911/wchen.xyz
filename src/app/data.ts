@@ -20,7 +20,7 @@ export const portfolioData = {
     {
       role: "Software Engineering Manager",
       company: "YouTube",
-      logo: "/logos/youtube.png",
+      logo: "https://www.vectorlogo.zone/logos/youtube/youtube-icon.svg",
       period: "August 2022 - Present",
       location: "San Francisco Bay Area",
       description: "Leading engineering teams at YouTube focused on large-scale infrastructure and developer experience (DevEx) for the world's largest video platform.",
@@ -32,7 +32,7 @@ export const portfolioData = {
     {
       role: "Senior Engineering Manager, Developer Platform",
       company: "Databricks",
-      logo: "/logos/databricks.png",
+      logo: "https://www.vectorlogo.zone/logos/databricks/databricks-icon.svg",
       period: "January 2020 - April 2022",
       location: "San Francisco, CA",
       description: "Built up the Developer Platform org during the pandemic. Started with 5 engineers in SF, grew it to ~30 engineers distributed across both the US and Europe.",
@@ -46,7 +46,7 @@ export const portfolioData = {
     {
       role: "Head of Developer Infrastructure",
       company: "Argo AI",
-      logo: "/logos/argoai.png",
+      logo: "https://www.vectorlogo.zone/logos/argoai/argoai-icon.svg",
       period: "2018 - 2020",
       location: "Palo Alto, CA",
       description: "Grew Argo AI's DevInfra org from 4 to 10+ engineers in 3 US locations, scaling the org into two teams: Vehicle Deployment and Build.",
@@ -60,7 +60,7 @@ export const portfolioData = {
     {
       role: "Director of Engineering",
       company: "Didi",
-      logo: "/logos/didi.png",
+      logo: "https://www.vectorlogo.zone/logos/didiglobal/didiglobal-icon.svg",
       period: "2016 - 2018",
       location: "Mountain View, CA",
       description: "Dual leadership roles: Director of Engineering, International Business Technology and Head of Tools and Infrastructure (Effectiveness Platform).",
@@ -73,7 +73,7 @@ export const portfolioData = {
     {
       role: "Staff Software Engineer",
       company: "LinkedIn",
-      logo: "/logos/linkedin.png",
+      logo: "https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg",
       period: "2013 - 2016",
       location: "Mountain View, CA",
       description: "TL of the Developer Tools team, focusing on build and inner dev-loop; member of the Horizontal Initiative Committee.",
@@ -86,7 +86,7 @@ export const portfolioData = {
     {
       role: "Lead Software Engineer",
       company: "SuccessFactors (SAP)",
-      logo: "/logos/successfactors.png",
+      logo: "https://www.vectorlogo.zone/logos/sap/sap-icon.svg",
       period: "2007 - 2013",
       location: "Reston, VA",
       description: "Grew into the TL of the Platform Foundation team and a core member of the Architecture Design Review Committee.",
@@ -101,15 +101,9 @@ export const portfolioData = {
     development: ["Java/JavaEE & Spring", "Scala & sbt/Gradle", "System Design & SDK Development", "Python & CLI Tooling", "Developer Experience (DevEx) Metrics"]
   },
   education: [
-    { school: "Stanford University Graduate School of Business", degree: "LEAD Business Program, Executive Education", period: "September 2023", logo: "/logos/stanford.png" },
-    { school: "University of Central Florida", degree: "MS, Computer Science", period: "2004 - 2007", logo: "/logos/ucf.png" },
-    { school: "University of Science and Technology of China", degree: "BS, Computer Science", period: "1999 - 2004", logo: "/logos/ustc.png" }
-  ],
-  awards: [
-    "SAP HiPo (High Potential employee)",
-    "All Star Award, Plateau Systems Product Engineering",
-    "Most Valuable Rookie, Plateau Systems Product Engineering",
-    "Outstanding Prize, 15th National Olympiad of Informatics (Programming Contest)"
+    { school: "Stanford University Graduate School of Business", degree: "LEAD Business Program, Executive Education", period: "September 2023", logo: "https://www.vectorlogo.zone/logos/stanford/stanford-icon.svg" },
+    { school: "University of Central Florida", degree: "MS, Computer Science", period: "2004 - 2007", logo: "https://www.vectorlogo.zone/logos/ucf/ucf-icon.svg" },
+    { school: "University of Science and Technology of China", degree: "BS, Computer Science", period: "1999 - 2004", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/USTC_logo.svg/1200px-USTC_logo.svg.png" }
   ],
   articles: [
     {
