@@ -2,11 +2,12 @@
 
 :root {
   --background: #fdfdfc;
-  --foreground: #1a1a1a;
-  --youtube-red: #bc1a22; /* Muted, professional ruby red */
-  --soft-cream: #f4f4f0;
+  --foreground: #2d2d2d; /* Softer black */
+  --youtube-red: #a82a2a; /* Softer, dusty crimson */
+  --soft-cream: #f7f7f5;
   --zinc-100: #f1f1f1;
-  --zinc-800: #272727;
+  --zinc-200: #e4e4e7;
+  --zinc-500: #71717a;
 }
 
 @theme inline {
@@ -20,9 +21,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0f0f0f;
-    --foreground: #fdfdfc;
-    --soft-cream: #1a1a1a;
+    --background: #121212; /* Softer dark mode */
+    --foreground: #e4e4e7;
+    --soft-cream: #1c1c1c;
   }
 }
 
@@ -30,6 +31,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
 }
 
 @keyframes fade-in {
@@ -38,7 +40,7 @@ body {
 }
 
 @keyframes slide-in-from-bottom {
-  from { transform: translateY(1rem); opacity: 0; }
+  from { transform: translateY(0.5rem); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
 
@@ -50,18 +52,7 @@ body {
   animation-name: fade-in;
 }
 
-.slide-in-from-bottom-4 {
-  animation-name: slide-in-from-bottom;
-}
-
-.slide-in-from-bottom-6 {
-  animation-name: slide-in-from-bottom;
-}
-
-.slide-in-from-bottom-8 {
-  animation-name: slide-in-from-bottom;
-}
-
-.slide-in-from-bottom-10 {
-  animation-name: slide-in-from-bottom;
-}
+.slide-in-from-bottom-4 { animation-name: slide-in-from-bottom; }
+.slide-in-from-bottom-6 { animation-name: slide-in-from-bottom; }
+.slide-in-from-bottom-8 { animation-name: slide-in-from-bottom; }
+.slide-in-from-bottom-10 { animation-name: slide-in-from-bottom; }
