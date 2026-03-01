@@ -105,12 +105,7 @@ export const portfolioData = {
     { school: "University of Central Florida", degree: "MS, Computer Science", period: "2004 - 2007", logo: "/logos/ucf.png" },
     { school: "University of Science and Technology of China", degree: "BS, Computer Science", period: "1999 - 2004", logo: "/logos/ustc.png" }
   ],
-  awards: [
-    "SAP HiPo (High Potential employee)",
-    "All Star Award, Plateau Systems Product Engineering",
-    "Most Valuable Rookie, Plateau Systems Product Engineering",
-    "Outstanding Prize, 15th National Olympiad of Informatics (Programming Contest)"
-  ],
+  awards: [],
   articles: [
     {
       slug: "management-philosophy",

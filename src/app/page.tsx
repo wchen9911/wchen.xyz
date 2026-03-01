@@ -89,7 +89,6 @@ export default function Home() {
                   <div className="w-10 h-10 bg-[#a82a2a]/5 rounded-xl flex items-center justify-center text-[#a82a2a] group-hover:bg-[#a82a2a] group-hover:text-white transition-all">
                      {pillarIcons[i]}
                   </div>
-                  <span className="text-xs font-bold text-[#a82a2a] opacity-30">0{i+1}</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-[#2d2d2d]">{pillar.title}</h3>
                 <p className="text-sm text-zinc-500 leading-relaxed font-medium">{pillar.description}</p>
@@ -178,26 +177,14 @@ export default function Home() {
               </div>
             </section>
 
-            {/* Awards: Clean list */}
-            <section className="space-y-6">
-              <h2 className="text-xl font-extrabold tracking-tight text-zinc-400">Recognitions</h2>
-              <div className="space-y-3">
-                {awards.slice(0, 4).map((award, i) => (
-                  <div key={i} className="flex items-center gap-3 text-xs font-medium text-zinc-500">
-                    <Award className="w-3.5 h-3.5 text-[#a82a2a]/40" /> {award}
-                  </div>
-                ))}
-              </div>
-            </section>
-
             {/* Collaborate Section */}
             <section className="space-y-6 pt-10 border-t border-zinc-100">
               <div className="grid gap-4">
-                <a href={linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 w-full py-4 bg-[#a82a2a] text-white rounded-2xl font-bold hover:opacity-90 transition-all">
-                  <Linkedin className="w-5 h-5" /> Connect on LinkedIn
+                <a href={linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 w-full py-4 bg-[#a82a2a] text-white rounded-2xl font-bold hover:opacity-90 transition-all text-sm uppercase tracking-widest">
+                  <Linkedin className="w-4 h-4" /> LinkedIn
                 </a>
-                <a href={`mailto:${email}`} className="flex items-center justify-center gap-3 w-full py-4 bg-zinc-100 text-zinc-700 rounded-2xl font-bold hover:bg-zinc-200 transition-all">
-                  <Mail className="w-5 h-5 text-[#a82a2a]" /> Email Me
+                <a href={`mailto:${email}`} className="flex items-center justify-center gap-3 w-full py-4 bg-zinc-100 text-zinc-700 rounded-2xl font-bold hover:bg-zinc-200 transition-all text-sm uppercase tracking-widest">
+                  <Mail className="w-4 h-4 text-[#a82a2a]" /> Email
                 </a>
               </div>
             </section>
@@ -208,12 +195,10 @@ export default function Home() {
         {/* Footer: Simple & Clean */}
         <footer className="pt-16 border-t border-zinc-100 flex flex-col md:flex-row justify-between items-center gap-8 text-xs font-medium text-zinc-400">
            <p>&copy; {new Date().getFullYear()} {name} &middot; Engineering Leader &middot; YouTube</p>
-           <div className="flex gap-6">
-              {awards.slice(0, 3).map((award, i) => (
-                <div key={i} className="flex items-center gap-2">
-                   <Award className="w-3 h-3 text-[#a82a2a]/40" /> {award}
-                </div>
-              ))}
+           <div className="flex gap-8">
+             <span className="hover:text-[#a82a2a] transition-colors cursor-default">Velocity</span>
+             <span className="hover:text-[#a82a2a] transition-colors cursor-default">Effectiveness</span>
+             <span className="hover:text-[#a82a2a] transition-colors cursor-default">Intelligent Intent</span>
            </div>
         </footer>
 
