@@ -60,7 +60,7 @@ export const portfolioData = {
     {
       role: "Director of Engineering",
       company: "Didi",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/d/d8/DiDi_Logo.svg",
+      logo: "/logos/didi.png",
       period: "2016 - 2018",
       location: "Mountain View, CA",
       description: "Dual leadership roles: Director of Engineering, International Business Technology and Head of Tools and Infrastructure (Effectiveness Platform).",
