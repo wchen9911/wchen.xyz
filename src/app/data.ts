@@ -6,11 +6,9 @@ export const portfolioData = {
   phone: "650-390-7608",
   linkedin: "https://www.linkedin.com/in/wchen-tech",
   summary: [
-    "Accomplished technology leader with 13+ years of software development and 10+ years of technical leadership experience.",
-    "Specialize in leading Technical Infrastructure organizations that strive to elevate Development Velocity, Effectiveness, Craftsmanship, and Happiness.",
-    "Customer obsessed, always align interests and collaborate, earn and keep (engineering) customers' trust.",
-    "Seasoned leader in recruiting, managing and growing multi-cultural distributed teams; poised to identify and groom new technical leaders and enable senior ICs and managers.",
-    "Champion of data-driven approaches to improve development speed, effectiveness, quality, and experience."
+    "My mission is to elevate the productivity, craftsmanship, and happiness of software developers.",
+    "During my career, I spent most of my time in serving software developers other than serving end customers. I build common libraries, frameworks, and services for other developers to leverage. I build standard SDLC infrastructure and tooling to increase their productivity and craftsmanship. I am also a technology evangelist on best practices in software development.",
+    "I enjoy dealing with developers a lot. It is challenging, as they are often opinionated and unsatisfied. But that is perfect for me to hone both my technical and people leaderships! I also enjoy mentoring and coaching other developers. We succeed as a team, and it is our responsibility and culture to transform all of us to be more successful."
   ],
   pillars: [
     { title: "Velocity", description: "Reducing friction and latency in the development lifecycle." },
@@ -20,10 +18,10 @@ export const portfolioData = {
   ],
   experience: [
     {
-      role: "Engineering Leader",
-      company: "YouTube / Google",
-      period: "08/2022 - Present",
-      location: "San Bruno, CA",
+      role: "Software Engineering Manager",
+      company: "YouTube",
+      period: "August 2022 - Present",
+      location: "San Francisco Bay Area",
       description: "Leading engineering teams at YouTube focused on large-scale infrastructure and developer experience (DevEx) for the world's largest video platform.",
       highlights: [
         "Strategizing and executing initiatives to elevate engineering craftsmanship, productivity, and happiness across a global engineering organization.",
@@ -31,66 +29,63 @@ export const portfolioData = {
       ]
     },
     {
-      role: "Engineering Manager",
+      role: "Senior Engineering Manager, Developer Platform",
       company: "Databricks",
-      period: "2020 - 08/2022",
+      period: "January 2020 - April 2022",
       location: "San Francisco, CA",
-      description: "Led engineering teams building the core Databricks Lakehouse platform, specifically focused on high-performance data processing and SQL engine components.",
+      description: "Built up the Developer Platform org during the pandemic. Started with 5 engineers in SF, grew it to ~30 engineers distributed across both the US and Europe.",
       highlights: [
-        "Managed software engineers responsible for building and scaling high-performance data processing systems like the Photon vectorized query engine.",
-        "Contributed to enhancing the reliability and performance of Delta Lake, ensuring ACID transactions and scalable metadata handling for massive datasets.",
-        "Led initiatives to improve the efficiency and cost-effectiveness of Databricks' cloud-native infrastructure across AWS, Azure, and GCP."
+        "Scaled Databricks' dev platform and infra to support 4x engineers (~800) and 20x automated testing (20k+ CPU hours every day).",
+        "Built a per-service deployment platform and dismantled the biweekly monolithic release train, enabling daily deployments with confidence.",
+        "Unified fractured SDLC processes across Control Plane (web services) and Data Plane (runtime) teams.",
+        "Sped up dev inner-loop: replaced Scala compiler, built native IDE integration, and built a full cloud-based dev environment."
       ]
     },
     {
-      role: "Senior Engineering Manager",
+      role: "Head of Developer Infrastructure",
       company: "Argo AI",
-      period: "09/2018 - 2020",
+      period: "2018 - 2020",
       location: "Palo Alto, CA",
-      description: "Architected and scaled Argo AI's Developer Infrastructure organization from 4 to 20+ engineers across 3 locations, supporting hundreds of hardware and software engineers.",
+      description: "Grew Argo AI's DevInfra org from 4 to 10+ engineers in 3 US locations, scaling the org into two teams: Vehicle Deployment and Build.",
       highlights: [
-        "Spearheaded the transformation of the C++ build system by implementing distributed Bazel builds, achieving radical improvements in build reliability and developer velocity.",
-        "Built a next-generation, cloud-native CI/CD ecosystem leveraging JenkinsX, Prow, Tekton, Spinnaker, and Kubernetes.",
-        "Launched a centralized Developer Portal providing critical insights into development activity stats and project quality metrics.",
-        "Engineered a mission-critical Vehicle Deployment and Launcher system to orchestrate software, firmware, and HD map updates for a fleet of 100+ autonomous vehicles across 6 cities."
+        "Reduced vehicle update time by 90% (from 1.5 hours to <10 mins), covering OS, binaries, firmware, and HD maps.",
+        "Scaled up cloud and on-prem vehicle deployment infra to support 6 US cities, 100+ AVs, and 200+ Fleet laptops.",
+        "Migrated build system to Bazel, enabling polyglot (C++, Rust, Java, Golang) monorepo support and cross-arch compilation.",
+        "Built next-gen cloud-native CI/CD on top of JenkinsX, Prow, Tekton, and Spinnaker."
       ]
     },
     {
       role: "Director of Engineering",
-      company: "Didi Labs / Didi Chuxing",
-      period: "08/2016 - 08/2018",
+      company: "Didi",
+      period: "2016 - 2018",
       location: "Mountain View, CA",
-      description: "Held dual leadership roles as Head of Tools & Infrastructure (Effectiveness Platform) and Director of International Business Technology.",
+      description: "Dual leadership roles: Director of Engineering, International Business Technology and Head of Tools and Infrastructure (Effectiveness Platform).",
       highlights: [
-        "Transformed Didi's global software development lifecycle by leading 30+ engineers in building a unified idea-to-production (CI/CD) feedback loop for thousands of developers.",
-        "Recruited and built the International Payments team from scratch, delivering a scalable platform for global pay-in/pay-out partners.",
-        "Led the technical post-merger integration of 99 (Brazil), incorporating their product development process and data infrastructure into Didi's global ecosystem.",
-        "Executed a massive data center migration from AWS to Didi's private US Data Center, consolidating Kafka, Hadoop, Spark, and Redshift pipelines."
+        "Built the overseas International Payments team from ground up: recruited 8 engineers to build Didi's next-gen payments platform.",
+        "Led the technical post-merger integration of 99 (Brazil), incorporating their product development processes and data infra into HQ.",
+        "Led 30+ engineers in Beijing to transform developer experience with opinionated but frictionless platforms, from repository management to result analytics (A/B testing)."
       ]
     },
     {
-      role: "Technical Lead / Staff Software Engineer",
+      role: "Staff Software Engineer",
       company: "LinkedIn",
-      period: "10/2013 - 08/2016",
+      period: "2013 - 2016",
       location: "Mountain View, CA",
-      description: "Technical Lead for Development Tools and key representative on the Horizontal Initiative Committee.",
+      description: "TL of the Developer Tools team, focusing on build and inner dev-loop; member of the Horizontal Initiative Committee.",
       highlights: [
-        "Revolutionized the Play (sbt/Scala) ecosystem at LinkedIn, replacing legacy dependency resolution and significantly reducing build times for mission-critical applications.",
-        "Founded the 'Play on Gradle' project, bridging complex build ecosystems and presenting the architecture at the 2015 Gradle Summit.",
-        "Standardized code quality validation and improved IDE support for distributed development across the engineering organization.",
-        "Contributed to core pieces of the LinkedIn library tracking and cross-project development infrastructure."
+        "Led the 'Play-on-Gradle' initiative to unify the fractured build tooling landscape at LinkedIn (sbt vs Gradle).",
+        "Streamlined the inner dev-loop: achieved faster Scala build times and native Play/Scala IDE support.",
+        "Built enterprise-level automated dependency management services for all LinkedIn projects."
       ]
     },
     {
       role: "Lead Software Engineer",
-      company: "SuccessFactors (An SAP Company)",
-      period: "06/2011 - 10/2013",
+      company: "SuccessFactors, An SAP Company",
+      period: "2007 - 2013",
       location: "Reston, VA",
-      description: "Technical Lead of the Platform Foundation team and member of the Architecture Design Review Committee.",
+      description: "Grew into the TL of the Platform Foundation team and a core member of the Architecture Design Review Committee.",
       highlights: [
-        "Led the architectural transformation of a single-tenant JavaEE Web Application into a modern, multi-tenant enterprise platform.",
-        "Designed and implemented the application's SDK and core RESTful web services to enable ecosystem growth.",
-        "Modernized the build and delivery pipeline by integrating Maven, Jenkins, and TeamCity into a streamlined CI process."
+        "Responsible for experimenting and launching new technologies, frameworks, and tools across the organization."
       ]
     }
   ],
@@ -100,14 +95,15 @@ export const portfolioData = {
     development: ["Java/JavaEE & Spring", "Scala & sbt/Gradle", "System Design & SDK Development", "Python & CLI Tooling", "Developer Experience (DevEx) Metrics"]
   },
   education: [
-    { school: "University of Central Florida", degree: "Master of Science, Computer Science", period: "2004 - 2007" },
-    { school: "University of Science and Technology of China", degree: "Bachelor of Science, Computer Science", period: "1999 - 2004" }
+    { school: "Stanford University Graduate School of Business", degree: "LEAD Business Program, Executive Education", period: "September 2023" },
+    { school: "University of Central Florida", degree: "MS, Computer Science", period: "2004 - 2007" },
+    { school: "University of Science and Technology of China", degree: "BS, Computer Science", period: "1999 - 2004" }
   ],
   awards: [
-    "SAP HiPo (High Potential employee), 2013",
-    "All Star Award, Plateau Systems Product Engineering, 2010",
-    "Most Valuable Rookie, Plateau Systems Product Engineering, 2007",
-    "Outstanding Prize, 15th National Olympiad of Informatics (Programming Contest), 1998"
+    "SAP HiPo (High Potential employee)",
+    "All Star Award, Plateau Systems Product Engineering",
+    "Most Valuable Rookie, Plateau Systems Product Engineering",
+    "Outstanding Prize, 15th National Olympiad of Informatics (Programming Contest)"
   ],
   articles: [
     {
