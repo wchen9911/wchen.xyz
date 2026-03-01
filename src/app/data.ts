@@ -31,9 +31,21 @@ export const portfolioData = {
       ]
     },
     {
+      role: "Engineering Manager",
+      company: "Databricks",
+      period: "2022 - 2023",
+      location: "San Francisco, CA",
+      description: "Led engineering teams building the core Databricks Lakehouse platform, specifically focused on high-performance data processing and SQL engine components.",
+      highlights: [
+        "Managed software engineers responsible for building and scaling high-performance data processing systems like the Photon vectorized query engine.",
+        "Contributed to enhancing the reliability and performance of Delta Lake, ensuring ACID transactions and scalable metadata handling for massive datasets.",
+        "Led initiatives to improve the efficiency and cost-effectiveness of Databricks' cloud-native infrastructure across AWS, Azure, and GCP."
+      ]
+    },
+    {
       role: "Senior Engineering Manager",
       company: "Argo AI",
-      period: "09/2018 - 2023",
+      period: "09/2018 - 2022",
       location: "Palo Alto, CA",
       description: "Architected and scaled Argo AI's Developer Infrastructure organization from 4 to 20+ engineers across 3 locations, supporting hundreds of hardware and software engineers.",
       highlights: [
