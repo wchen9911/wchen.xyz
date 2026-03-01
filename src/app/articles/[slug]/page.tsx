@@ -21,29 +21,29 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
   const { name, linkedin } = portfolioData;
 
   return (
-    <main className="min-h-screen bg-white dark:bg-[#0f0f0f] text-[#0f0f0f] dark:text-white font-sans selection:bg-[#ff0000] selection:text-white transition-colors duration-300">
+    <main className="min-h-screen bg-[#fdfdfc] dark:bg-[#0f0f0f] text-[#1a1a1a] dark:text-[#fdfdfc] font-sans selection:bg-[#bc1a22] selection:text-white transition-colors duration-300">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-[#0f0f0f]/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
-        <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-6 bg-[#ff0000] rounded-md flex items-center justify-center">
-              <div className="w-0 h-0 border-t-[4px] border-t-transparent border-l-[6px] border-l-white border-b-[4px] border-b-transparent ml-0.5" />
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#fdfdfc]/80 dark:bg-[#0f0f0f]/80 backdrop-blur-md border-b border-zinc-200/50 dark:border-zinc-800/50">
+        <div className="max-w-6xl mx-auto px-8 h-20 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-10 h-7 bg-[#bc1a22] rounded-lg flex items-center justify-center transition-transform group-hover:scale-110">
+              <div className="w-0 h-0 border-t-[5px] border-t-transparent border-l-[8px] border-l-white border-b-[5px] border-b-transparent ml-0.5" />
             </div>
-            <span className="font-bold tracking-tight text-xl">{name}</span>
+            <span className="font-black tracking-tighter text-2xl uppercase italic">{name}</span>
           </Link>
-          <div className="flex gap-8 text-sm font-medium">
-            <Link href="/articles" className="text-[#ff0000]">Articles</Link>
-            <a href={linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-[#ff0000] transition-colors">LinkedIn</a>
+          <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.3em] text-zinc-400">
+            <Link href="/articles" className="text-[#bc1a22]">Articles</Link>
+            <a href={linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-[#bc1a22] transition-colors">LinkedIn</a>
           </div>
         </div>
       </nav>
 
       <div className="max-w-3xl mx-auto pt-32 px-6 pb-24 space-y-12">
-        <header className="space-y-6">
-          <Link href="/articles" className="text-zinc-500 hover:text-[#ff0000] transition-colors text-xs font-bold uppercase tracking-widest">← All Articles</Link>
-          <div className="space-y-2">
-            <time className="text-xs font-bold text-[#ff0000] uppercase tracking-widest">{article.date}</time>
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+        <header className="space-y-8">
+          <Link href="/articles" className="text-zinc-400 hover:text-[#bc1a22] transition-colors text-[10px] font-black uppercase tracking-[0.3em]">← All Articles</Link>
+          <div className="space-y-4">
+            <time className="text-xs font-black text-[#bc1a22] opacity-60 uppercase tracking-widest">{article.date}</time>
+            <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-tight">
               {article.title}
             </h1>
           </div>
@@ -53,25 +53,25 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
           <ReactMarkdown 
             remarkPlugins={[remarkGfm]}
             components={{
-              h1: ({...props}) => <h1 {...props} className="text-3xl font-extrabold text-[#ff0000] mt-12 mb-6" />,
-              h2: ({...props}) => <h2 {...props} className="text-2xl font-bold mt-10 mb-4 border-b border-zinc-100 dark:border-zinc-800 pb-2" />,
-              h3: ({...props}) => <h3 {...props} className="text-xl font-bold mt-8 mb-4" />,
-              p: ({...props}) => <p {...props} className="text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 mb-6" />,
-              ul: ({...props}) => <ul {...props} className="list-disc list-outside ml-6 mb-6 space-y-2 text-zinc-600 dark:text-zinc-400" />,
-              ol: ({...props}) => <ol {...props} className="list-decimal list-outside ml-6 mb-6 space-y-2 text-zinc-600 dark:text-zinc-400" />,
+              h1: ({...props}) => <h1 {...props} className="text-3xl font-black uppercase tracking-tight text-[#bc1a22] mt-16 mb-8 border-b border-zinc-100 dark:border-zinc-900 pb-4" />,
+              h2: ({...props}) => <h2 {...props} className="text-2xl font-black uppercase tracking-tight mt-12 mb-6" />,
+              h3: ({...props}) => <h3 {...props} className="text-xl font-bold mt-10 mb-4" />,
+              p: ({...props}) => <p {...props} className="text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 mb-8 font-medium" />,
+              ul: ({...props}) => <ul {...props} className="list-disc list-outside ml-6 mb-8 space-y-3 text-zinc-600 dark:text-zinc-400 font-medium" />,
+              ol: ({...props}) => <ol {...props} className="list-decimal list-outside ml-6 mb-8 space-y-3 text-zinc-600 dark:text-zinc-400 font-medium" />,
               li: ({...props}) => <li {...props} className="leading-relaxed" />,
-              blockquote: ({...props}) => <blockquote {...props} className="border-l-4 border-[#ff0000] pl-6 italic text-zinc-500 bg-zinc-50 dark:bg-zinc-900/50 py-4 pr-4 rounded-r-xl my-8" />,
-              a: ({...props}) => <a {...props} className="text-[#ff0000] hover:underline font-bold transition-colors" />,
-              code: ({...props}) => <code {...props} className="bg-zinc-100 dark:bg-zinc-800 rounded px-1.5 py-0.5 text-[#ff0000] font-mono text-sm" />,
+              blockquote: ({...props}) => <blockquote {...props} className="border-l-4 border-[#bc1a22]/30 pl-8 italic text-zinc-500 bg-[#f4f4f0]/50 dark:bg-zinc-900/50 py-8 pr-8 rounded-r-[2rem] my-12" />,
+              a: ({...props}) => <a {...props} className="text-[#bc1a22] hover:opacity-70 font-bold transition-opacity" />,
+              code: ({...props}) => <code {...props} className="bg-[#f4f4f0] dark:bg-zinc-800 rounded-lg px-2 py-1 text-[#bc1a22] font-mono text-sm" />,
             }}
           >
             {article.content}
           </ReactMarkdown>
         </article>
 
-        <footer className="pt-12 border-t border-zinc-200 dark:border-zinc-800 mt-24">
-          <Link href="/articles" className="bg-[#ff0000] hover:bg-[#cc0000] text-white px-8 py-3 rounded-full font-bold transition-all inline-block">
-            Explore More Articles
+        <footer className="pt-20 border-t border-zinc-100 dark:border-zinc-900 mt-24">
+          <Link href="/articles" className="bg-[#bc1a22] hover:opacity-90 text-white px-10 py-4 rounded-full font-black uppercase tracking-widest text-xs transition-all inline-block shadow-lg shadow-[#bc1a22]/20">
+            Keep Exploring Articles
           </Link>
         </footer>
       </div>

@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f0f0f;
-  --youtube-red: #ff0000;
+  --background: #fdfdfc;
+  --foreground: #1a1a1a;
+  --youtube-red: #bc1a22; /* Muted, professional ruby red */
+  --soft-cream: #f4f4f0;
   --zinc-100: #f1f1f1;
   --zinc-800: #272727;
 }
@@ -12,6 +13,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-youtube-red: var(--youtube-red);
+  --color-soft-cream: var(--soft-cream);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -19,7 +21,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0f0f0f;
-    --foreground: #ffffff;
+    --foreground: #fdfdfc;
+    --soft-cream: #1a1a1a;
   }
 }
 
