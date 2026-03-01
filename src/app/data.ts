@@ -22,7 +22,7 @@ export const portfolioData = {
     {
       role: "Engineering Leader",
       company: "YouTube / Google",
-      period: "2023 - Present",
+      period: "08/2022 - Present",
       location: "San Bruno, CA",
       description: "Leading engineering teams at YouTube focused on large-scale infrastructure and developer experience (DevEx) for the world's largest video platform.",
       highlights: [
@@ -33,7 +33,7 @@ export const portfolioData = {
     {
       role: "Engineering Manager",
       company: "Databricks",
-      period: "2022 - 2023",
+      period: "2020 - 08/2022",
       location: "San Francisco, CA",
       description: "Led engineering teams building the core Databricks Lakehouse platform, specifically focused on high-performance data processing and SQL engine components.",
       highlights: [
@@ -45,15 +45,14 @@ export const portfolioData = {
     {
       role: "Senior Engineering Manager",
       company: "Argo AI",
-      period: "09/2018 - 2022",
+      period: "09/2018 - 2020",
       location: "Palo Alto, CA",
       description: "Architected and scaled Argo AI's Developer Infrastructure organization from 4 to 20+ engineers across 3 locations, supporting hundreds of hardware and software engineers.",
       highlights: [
         "Spearheaded the transformation of the C++ build system by implementing distributed Bazel builds, achieving radical improvements in build reliability and developer velocity.",
         "Built a next-generation, cloud-native CI/CD ecosystem leveraging JenkinsX, Prow, Tekton, Spinnaker, and Kubernetes.",
         "Launched a centralized Developer Portal providing critical insights into development activity stats and project quality metrics.",
-        "Engineered a mission-critical Vehicle Deployment and Launcher system to orchestrate software, firmware, and HD map updates for a fleet of 100+ autonomous vehicles across 6 cities.",
-        "Orchestrated a large-scale migration of public cloud services to a private multi-cloud infrastructure (GCP and AWS)."
+        "Engineered a mission-critical Vehicle Deployment and Launcher system to orchestrate software, firmware, and HD map updates for a fleet of 100+ autonomous vehicles across 6 cities."
       ]
     },
     {
@@ -123,7 +122,7 @@ export const portfolioData = {
       title: "Management Playbook: 1:1s",
       date: "Oct 2022",
       excerpt: "How I view the purpose, frequency, and agenda of recurring 1:1 meetings.",
-      content: `# Wei’s view on 1:1s\n\n### Principles\n\n- The **recurring** 1:1s are a reserved time slot (of my time) **FOR YOU** (not for me).\n- Ultimately, you own the agenda for anything that you want to discuss.\n- A living doc will be used to capture our discussions and action items.\n- Even though I have strong preferences for what we discuss, you are in the driver’s seat.\n\n### Preferred Topics\n\n1. **Personal growth:** Career development, goals, feedback, and coaching.\n2. **Your personal feeling:** Feedback on work-life balance, projects, processes, and people.\n3. **Expectations and progress:** Moving towards goals and identifying where help is needed.\n4. **New project ideas:** What could we be doing that we aren't?\n5. **Getting to know each other:** Hobbies, what bothers you, and life outside work.\n\n### Day to Day Work Items\n\nWhile technical progress is important, 1:1s aren't the best place for that. Those should happen in standups or sprint planning. However, if you prefer to discuss them privately, it's always an option.`
+      content: `# Wei’s view on 1:1s\n\n### Principles\n\n- The **recurring** 1:1s are a reserved time slot (of my time) **FOR YOU** (not for me).\n- Ultimately, you own the agenda for anything that you want to discuss.\n- A living doc will be used to capture our discussions and action items.\n- Even though I have strong preferences for what we discuss, you are in the driver’s seat.\n- A living doc (e.g. Google doc) will be used to capture our discussions and action items.\n\n### Preferred Topics\n\n1. **Personal growth:** Career development, goals, feedback, and coaching.\n2. **Your personal feeling:** Feedback on work-life balance, projects, processes, and people.\n3. **Expectations and progress:** Moving towards goals and identifying where help is needed.\n4. **New project ideas:** What could we be doing that we aren't?\n5. **Getting to know each other:** Hobbies, what bothers you, and life outside work.\n\n### Day to Day Work Items\n\nWhile technical progress is important, 1:1s aren't the best place for that. Those should happen in standups or sprint planning. However, if you prefer to discuss them privately, it's always an option.`
     },
     {
       slug: "software-engineering-research",
