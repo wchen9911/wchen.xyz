@@ -1,7 +1,8 @@
+import Link from "next/link";
 import { portfolioData } from "./data";
 
 export default function Home() {
-  const { name, title, tagline, summary, pillars, experience, skills, education, awards, linkedin, email } = portfolioData;
+  const { name, title, tagline, summary, pillars, experience, skills, education, awards, linkedin, email, articles } = portfolioData;
 
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-300 font-sans selection:bg-zinc-800 selection:text-zinc-100">
@@ -20,6 +21,7 @@ export default function Home() {
             &ldquo;{tagline}&rdquo;
           </p>
           <div className="flex items-center justify-center gap-6 pt-8 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-1000">
+            <Link href="/articles" className="text-zinc-100 hover:text-zinc-400 transition-colors uppercase tracking-widest text-sm font-semibold border-b border-zinc-700 pb-1">Articles</Link>
             <a href={linkedin} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-100 transition-colors uppercase tracking-widest text-sm font-semibold">LinkedIn</a>
             <a href={`mailto:${email}`} className="text-zinc-400 hover:text-zinc-100 transition-colors uppercase tracking-widest text-sm font-semibold">Contact</a>
           </div>
@@ -48,6 +50,23 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Latest Articles */}
+        <section className="space-y-12">
+          <div className="flex items-end justify-between border-b border-zinc-900 pb-8">
+            <h2 className="text-sm font-bold tracking-[0.2em] text-zinc-500 uppercase">Latest Writing</h2>
+            <Link href="/articles" className="text-sm font-semibold text-zinc-400 hover:text-zinc-100 transition-colors">View All →</Link>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {articles.slice(0, 3).map((article) => (
+              <Link key={article.slug} href={`/articles/${article.slug}`} className="group space-y-4">
+                <time className="text-[10px] font-mono text-zinc-600 uppercase tracking-widest">{article.date}</time>
+                <h3 className="text-lg font-bold text-zinc-100 group-hover:text-zinc-400 transition-colors leading-snug">{article.title}</h3>
+                <p className="text-sm text-zinc-500 line-clamp-2">{article.excerpt}</p>
+              </Link>
+            ))}
           </div>
         </section>
 
