@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { portfolioData } from "../../data";
 import { notFound } from "next/navigation";
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 export async function generateStaticParams() {
   return portfolioData.articles.map((article) => ({
@@ -28,24 +30,23 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
         </header>
 
         <article className="prose prose-invert prose-zinc max-w-none">
-          {/* A simple markdown renderer would be better, but for now we'll map common patterns */}
-          <div className="space-y-8 text-lg leading-relaxed text-zinc-400 whitespace-pre-wrap">
-            {article.content.split('
-
-').map((block, i) => {
-              if (block.startsWith('# ')) return <h1 key={i} className="text-3xl font-bold text-zinc-100 mt-12">{block.replace('# ', '')}</h1>;
-              if (block.startsWith('## ')) return <h2 key={i} className="text-2xl font-bold text-zinc-100 mt-10">{block.replace('## ', '')}</h2>;
-              if (block.startsWith('### ')) return <h3 key={i} className="text-xl font-bold text-zinc-100 mt-8">{block.replace('### ', '')}</h3>;
-              if (block.startsWith('> ')) return <blockquote key={i} className="border-l-2 border-zinc-700 pl-6 italic text-zinc-500 my-8">{block.replace('> ', '')}</blockquote>;
-              if (block.startsWith('- ')) return (
-                <ul key={i} className="space-y-2 list-disc list-inside">
-                  {block.split('
-').map((li, j) => <li key={j}>{li.replace('- ', '')}</li>)}
-                </ul>
-              );
-              return <p key={i}>{block}</p>;
-            })}
-          </div>
+          <ReactMarkdown 
+            remarkPlugins={[remarkGfm]}
+            components={{
+              h1: ({...props}) => <h1 {...props} className="text-3xl font-bold text-zinc-100 mt-12 mb-6" />,
+              h2: ({...props}) => <h2 {...props} className="text-2xl font-bold text-zinc-100 mt-10 mb-4" />,
+              h3: ({...props}) => <h3 {...props} className="text-xl font-bold text-zinc-100 mt-8 mb-4" />,
+              p: ({...props}) => <p {...props} className="text-lg leading-relaxed text-zinc-400 mb-6" />,
+              ul: ({...props}) => <ul {...props} className="list-disc list-outside ml-6 mb-6 space-y-2 text-zinc-400" />,
+              ol: ({...props}) => <ol {...props} className="list-decimal list-outside ml-6 mb-6 space-y-2 text-zinc-400" />,
+              li: ({...props}) => <li {...props} className="leading-relaxed" />,
+              blockquote: ({...props}) => <blockquote {...props} className="border-l-2 border-zinc-700 pl-6 italic text-zinc-500 my-8" />,
+              a: ({...props}) => <a {...props} className="text-zinc-100 hover:text-zinc-400 underline transition-colors" />,
+              code: ({...props}) => <code {...props} className="bg-zinc-900 rounded px-1 text-zinc-200 font-mono text-sm" />,
+            }}
+          >
+            {article.content}
+          </ReactMarkdown>
         </article>
 
         <footer className="pt-12 border-t border-zinc-900 mt-24">
