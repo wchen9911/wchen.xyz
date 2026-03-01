@@ -20,6 +20,17 @@ export const portfolioData = {
   ],
   experience: [
     {
+      role: "Engineering Leader",
+      company: "YouTube / Google",
+      period: "2023 - Present",
+      location: "San Bruno, CA",
+      description: "Leading engineering teams at YouTube to improve developer velocity and infrastructure.",
+      highlights: [
+        "Focusing on large-scale infrastructure and developer experience at the world's largest video platform.",
+        "Applying DevEx principles to elevate engineering craftsmanship and productivity."
+      ]
+    },
+    {
       role: "Senior Engineering Manager",
       company: "Argo AI",
       period: "09/2018 - Present",
