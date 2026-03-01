@@ -24,24 +24,24 @@ export const portfolioData = {
       company: "YouTube / Google",
       period: "2023 - Present",
       location: "San Bruno, CA",
-      description: "Leading engineering teams at YouTube to improve developer velocity and infrastructure.",
+      description: "Leading engineering teams at YouTube focused on large-scale infrastructure and developer experience (DevEx) for the world's largest video platform.",
       highlights: [
-        "Focusing on large-scale infrastructure and developer experience at the world's largest video platform.",
-        "Applying DevEx principles to elevate engineering craftsmanship and productivity."
+        "Strategizing and executing initiatives to elevate engineering craftsmanship, productivity, and happiness across a global engineering organization.",
+        "Applying advanced DevEx principles to solve complex infrastructure challenges and streamline developer workflows at Google scale."
       ]
     },
     {
       role: "Senior Engineering Manager",
       company: "Argo AI",
-      period: "09/2018 - Present",
+      period: "09/2018 - 2023",
       location: "Palo Alto, CA",
-      description: "Built Argo's DevInfra organization from 4 to 20+ engineers, covering Build, CI/CD, DevExp, Vehicle Deployment, and Cloud Infra.",
+      description: "Architected and scaled Argo AI's Developer Infrastructure organization from 4 to 20+ engineers across 3 locations, supporting hundreds of hardware and software engineers.",
       highlights: [
-        "Replaced C++ build system with distributed Bazel builds, significantly improving reliability and performance.",
-        "Built next-gen cloud-native CI/CD on JenkinsX, Prow, Tekton, Spinnaker, and Kubernetes.",
-        "Developed a developer portal with activity stats and project quality metrics.",
-        "Managed OS, firmware, and map deployment to 100+ autonomous vehicles across 6 US cities.",
-        "Migrated public cloud services to private multi-cloud (GCP and AWS)."
+        "Spearheaded the transformation of the C++ build system by implementing distributed Bazel builds, achieving radical improvements in build reliability and developer velocity.",
+        "Built a next-generation, cloud-native CI/CD ecosystem leveraging JenkinsX, Prow, Tekton, Spinnaker, and Kubernetes.",
+        "Launched a centralized Developer Portal providing critical insights into development activity stats and project quality metrics.",
+        "Engineered a mission-critical Vehicle Deployment and Launcher system to orchestrate software, firmware, and HD map updates for a fleet of 100+ autonomous vehicles across 6 cities.",
+        "Orchestrated a large-scale migration of public cloud services to a private multi-cloud infrastructure (GCP and AWS)."
       ]
     },
     {
@@ -49,12 +49,12 @@ export const portfolioData = {
       company: "Didi Labs / Didi Chuxing",
       period: "08/2016 - 08/2018",
       location: "Mountain View, CA",
-      description: "Led International Payments and 99 (Brazilian subsidiary) engineering teams, as well as the Effectiveness Platform (Head of Tools and Infra).",
+      description: "Held dual leadership roles as Head of Tools & Infrastructure (Effectiveness Platform) and Director of International Business Technology.",
       highlights: [
-        "Built the International Payments team from scratch, recruiting 8 engineers in Mountain View.",
-        "Transformed Didi's CI/CD loop for thousands of engineers, covering requirement tracking to production deployment.",
-        "Consolidated data infra (Kafka, Hadoop, Spark) and migrated data centers from AWS to Didi US.",
-        "Integrated 99's engineering process post-merger, including mobile, web, and QA."
+        "Transformed Didi's global software development lifecycle by leading 30+ engineers in building a unified idea-to-production (CI/CD) feedback loop for thousands of developers.",
+        "Recruited and built the International Payments team from scratch, delivering a scalable platform for global pay-in/pay-out partners.",
+        "Led the technical post-merger integration of 99 (Brazil), incorporating their product development process and data infrastructure into Didi's global ecosystem.",
+        "Executed a massive data center migration from AWS to Didi's private US Data Center, consolidating Kafka, Hadoop, Spark, and Redshift pipelines."
       ]
     },
     {
@@ -62,12 +62,12 @@ export const portfolioData = {
       company: "LinkedIn",
       period: "10/2013 - 08/2016",
       location: "Mountain View, CA",
-      description: "Tech Lead for Development Tools and representative to the Horizontal Initiative Committee.",
+      description: "Technical Lead for Development Tools and key representative on the Horizontal Initiative Committee.",
       highlights: [
-        "Revolutionized Play (sbt/Scala) tooling, replacing Ivy resolution and improving build times.",
-        "Initiated the 'Play on Gradle' project, presenting at the 2015 Gradle Summit.",
-        "Improved Play IDE support and standardized code quality validation across the company.",
-        "Worked on CD pipelines, library tracking services, and dependency management frameworks."
+        "Revolutionized the Play (sbt/Scala) ecosystem at LinkedIn, replacing legacy dependency resolution and significantly reducing build times for mission-critical applications.",
+        "Founded the 'Play on Gradle' project, bridging complex build ecosystems and presenting the architecture at the 2015 Gradle Summit.",
+        "Standardized code quality validation and improved IDE support for distributed development across the engineering organization.",
+        "Contributed to core pieces of the LinkedIn library tracking and cross-project development infrastructure."
       ]
     },
     {
@@ -75,18 +75,18 @@ export const portfolioData = {
       company: "SuccessFactors (An SAP Company)",
       period: "06/2011 - 10/2013",
       location: "Reston, VA",
-      description: "Tech Lead of Platform Foundation and Architecture Design Review Committee member.",
+      description: "Technical Lead of the Platform Foundation team and member of the Architecture Design Review Committee.",
       highlights: [
-        "Converted single-tenant JavaEE web apps into multi-tenant enterprise applications.",
-        "Built application SDK and exposed RESTful web services.",
-        "Streamlined build and delivery by integrating Maven, TeamCity, Jenkins, and Git."
+        "Led the architectural transformation of a single-tenant JavaEE Web Application into a modern, multi-tenant enterprise platform.",
+        "Designed and implemented the application's SDK and core RESTful web services to enable ecosystem growth.",
+        "Modernized the build and delivery pipeline by integrating Maven, Jenkins, and TeamCity into a streamlined CI process."
       ]
     }
   ],
   skills: {
-    leadership: ["Org Building", "Strategic Planning", "Recruiting", "Multi-cultural Leadership", "Technical Architecture"],
-    infrastructure: ["Bazel", "Kubernetes", "CI/CD", "AWS/GCP", "Terraform", "Docker"],
-    development: ["Java/JavaEE", "Scala", "sbt/Gradle", "React", "Python", "CLI Tooling"]
+    leadership: ["Org Building & Scaling", "Strategic Planning", "Recruiting & Talent Development", "Multi-cultural Distributed Leadership", "Technical Architecture"],
+    infrastructure: ["Bazel (Distributed Builds)", "Kubernetes & Cloud-Native CI/CD", "AWS & GCP (Multi-cloud)", "Infrastructure as Code (Terraform)", "Docker & Container Orchestration"],
+    development: ["Java/JavaEE & Spring", "Scala & sbt/Gradle", "System Design & SDK Development", "Python & CLI Tooling", "Developer Experience (DevEx) Metrics"]
   },
   education: [
     { school: "University of Central Florida", degree: "Master of Science, Computer Science", period: "2004 - 2007" },
