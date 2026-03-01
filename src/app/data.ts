@@ -46,7 +46,7 @@ export const portfolioData = {
     {
       role: "Head of Developer Infrastructure",
       company: "Argo AI",
-      logo: "https://www.vectorlogo.zone/logos/argoai/argoai-icon.svg",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Argo_AI_logo.svg",
       period: "2018 - 2020",
       location: "Palo Alto, CA",
       description: "Grew Argo AI's DevInfra org from 4 to 10+ engineers in 3 US locations, scaling the org into two teams: Vehicle Deployment and Build.",
@@ -60,7 +60,7 @@ export const portfolioData = {
     {
       role: "Director of Engineering",
       company: "Didi",
-      logo: "https://www.vectorlogo.zone/logos/didiglobal/didiglobal-icon.svg",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/d/d8/DiDi_Logo.svg",
       period: "2016 - 2018",
       location: "Mountain View, CA",
       description: "Dual leadership roles: Director of Engineering, International Business Technology and Head of Tools and Infrastructure (Effectiveness Platform).",
@@ -101,9 +101,9 @@ export const portfolioData = {
     development: ["Java/JavaEE & Spring", "Scala & sbt/Gradle", "System Design & SDK Development", "Python & CLI Tooling", "Developer Experience (DevEx) Metrics"]
   },
   education: [
-    { school: "Stanford University Graduate School of Business", degree: "LEAD Business Program, Executive Education", period: "September 2023", logo: "https://www.vectorlogo.zone/logos/stanford/stanford-icon.svg" },
-    { school: "University of Central Florida", degree: "MS, Computer Science", period: "2004 - 2007", logo: "https://www.vectorlogo.zone/logos/ucf/ucf-icon.svg" },
-    { school: "University of Science and Technology of China", degree: "BS, Computer Science", period: "1999 - 2004", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/USTC_logo.svg/1200px-USTC_logo.svg.png" }
+    { school: "Stanford University Graduate School of Business", degree: "LEAD Business Program, Executive Education", period: "September 2023", logo: "/logos/stanford.png" },
+    { school: "University of Central Florida", degree: "MS, Computer Science", period: "2004 - 2007", logo: "/logos/ucf.png" },
+    { school: "University of Science and Technology of China", degree: "BS, Computer Science", period: "1999 - 2004", logo: "/logos/ustc.png" }
   ],
   awards: [
     "SAP HiPo (High Potential employee)",
