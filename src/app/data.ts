@@ -20,7 +20,7 @@ export const portfolioData = {
     {
       role: "Software Engineering Manager",
       company: "YouTube",
-      logo: "https://www.vectorlogo.zone/logos/youtube/youtube-icon.svg",
+      logo: "/logos/youtube.png",
       period: "August 2022 - Present",
       location: "San Francisco Bay Area",
       description: "Leading engineering teams at YouTube focused on large-scale infrastructure and developer experience (DevEx) for the world's largest video platform.",
@@ -32,7 +32,7 @@ export const portfolioData = {
     {
       role: "Senior Engineering Manager, Developer Platform",
       company: "Databricks",
-      logo: "https://www.vectorlogo.zone/logos/databricks/databricks-icon.svg",
+      logo: "/logos/databricks.png",
       period: "January 2020 - April 2022",
       location: "San Francisco, CA",
       description: "Built up the Developer Platform org during the pandemic. Started with 5 engineers in SF, grew it to ~30 engineers distributed across both the US and Europe.",
@@ -46,7 +46,7 @@ export const portfolioData = {
     {
       role: "Head of Developer Infrastructure",
       company: "Argo AI",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/0/00/Argo_AI_logo.svg",
+      logo: "/logos/argoai.png",
       period: "2018 - 2020",
       location: "Palo Alto, CA",
       description: "Grew Argo AI's DevInfra org from 4 to 10+ engineers in 3 US locations, scaling the org into two teams: Vehicle Deployment and Build.",
@@ -60,7 +60,7 @@ export const portfolioData = {
     {
       role: "Director of Engineering",
       company: "Didi",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Didi_Chuxing.svg",
+      logo: "/logos/didi.png",
       period: "2016 - 2018",
       location: "Mountain View, CA",
       description: "Dual leadership roles: Director of Engineering, International Business Technology and Head of Tools and Infrastructure (Effectiveness Platform).",
@@ -73,7 +73,7 @@ export const portfolioData = {
     {
       role: "Staff Software Engineer",
       company: "LinkedIn",
-      logo: "https://cdn.simpleicons.org/linkedin",
+      logo: "/logos/linkedin.png",
       period: "2013 - 2016",
       location: "Mountain View, CA",
       description: "TL of the Developer Tools team, focusing on build and inner dev-loop; member of the Horizontal Initiative Committee.",
@@ -86,7 +86,7 @@ export const portfolioData = {
     {
       role: "Lead Software Engineer",
       company: "SuccessFactors (SAP)",
-      logo: "https://cdn.simpleicons.org/sap",
+      logo: "/logos/successfactors.png",
       period: "2007 - 2013",
       location: "Reston, VA",
       description: "Grew into the TL of the Platform Foundation team and a core member of the Architecture Design Review Committee.",
@@ -101,9 +101,9 @@ export const portfolioData = {
     development: ["Java/JavaEE & Spring", "Scala & sbt/Gradle", "System Design & SDK Development", "Python & CLI Tooling", "Developer Experience (DevEx) Metrics"]
   },
   education: [
-    { school: "Stanford University Graduate School of Business", degree: "LEAD Business Program, Executive Education", period: "September 2023" },
-    { school: "University of Central Florida", degree: "MS, Computer Science", period: "2004 - 2007" },
-    { school: "University of Science and Technology of China", degree: "BS, Computer Science", period: "1999 - 2004" }
+    { school: "Stanford University Graduate School of Business", degree: "LEAD Business Program, Executive Education", period: "September 2023", logo: "/logos/stanford.png" },
+    { school: "University of Central Florida", degree: "MS, Computer Science", period: "2004 - 2007", logo: "/logos/ucf.png" },
+    { school: "University of Science and Technology of China", degree: "BS, Computer Science", period: "1999 - 2004", logo: "/logos/ustc.png" }
   ],
   awards: [
     "SAP HiPo (High Potential employee)",

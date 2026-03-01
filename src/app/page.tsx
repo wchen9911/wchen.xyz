@@ -53,7 +53,7 @@ export default function Home() {
                  <div className="w-10 h-1 bg-[#a82a2a]/10 rounded-full" />
                  <div className="space-y-4">
                    <div className="w-full h-24 bg-[#a82a2a]/5 dark:bg-[#a82a2a]/10 rounded-2xl flex items-center justify-center">
-                      <img src="https://www.vectorlogo.zone/logos/youtube/youtube-icon.svg" className="w-12 h-12 grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" alt="YouTube" />
+                      <img src="/logos/youtube.png" className="w-12 h-12 grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" alt="YouTube" />
                    </div>
                    <div className="space-y-2.5">
                      <div className="w-3/4 h-2 bg-zinc-100 dark:bg-zinc-800 rounded-full" />
@@ -158,14 +158,13 @@ export default function Home() {
               </div>
             </section>
 
-            {/* Education */}
             <section className="space-y-6">
               <h2 className="text-xl font-extrabold tracking-tight text-zinc-400 dark:text-zinc-600">Foundation</h2>
               <div className="space-y-6">
                 {education.map((edu, i) => (
                   <div key={i} className="flex gap-5 group">
-                    <div className="w-10 h-10 bg-zinc-50 dark:bg-zinc-800 rounded-xl flex items-center justify-center shrink-0 border border-zinc-100 dark:border-zinc-800 group-hover:border-[#a82a2a]/20 transition-all">
-                      <GraduationCap className="w-4 h-4 text-[#a82a2a]" />
+                    <div className="w-10 h-10 bg-white dark:bg-[#121212] border border-zinc-200 dark:border-zinc-800 rounded-xl flex items-center justify-center shrink-0 shadow-sm overflow-hidden p-1.5 group-hover:border-[#a82a2a]/20 transition-all">
+                      <img src={(edu as any).logo} className="w-full h-full object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" alt={edu.school} />
                     </div>
                     <div className="space-y-1">
                       <h4 className="text-sm font-bold text-zinc-700 dark:text-zinc-300 leading-tight">{edu.school}</h4>
