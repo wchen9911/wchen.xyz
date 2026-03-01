@@ -1,7 +1,7 @@
 export const portfolioData = {
   name: "Wei Chen",
   title: "Engineering Leader & DevInfra Specialist",
-  tagline: "Elevating Development Velocity, Effectiveness, Craftsmanship, and Happiness",
+  tagline: "Elevating Development Velocity, Effectiveness, and Intelligent Intent",
   email: "joyuan@gmail.com",
   phone: "650-390-7608",
   linkedin: "https://www.linkedin.com/in/wchen-tech",

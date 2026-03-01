@@ -36,8 +36,8 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#a82a2a]/5 border border-[#a82a2a]/10 rounded-full text-[#a82a2a] font-bold text-xs animate-in fade-in slide-in-from-bottom-4 duration-700">
                 <div className="w-1.5 h-1.5 bg-[#a82a2a] rounded-full" /> Engineering Leadership
               </div>
-              <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] text-[#2d2d2d] animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200">
-                Velocity <span className="text-zinc-300">&</span> Craft.
+              <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] text-[#2d2d2d] animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200 uppercase">
+                Velocity <span className="text-zinc-300">&</span> <br /> Intelligent Intent.
               </h1>
             </div>
             <div className="space-y-6 max-w-xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-400">
